@@ -26,6 +26,8 @@ public class AppTest {
     assertEquals(55, classUnderTest.sumOfRange(1, 10));
     assertEquals(5.5, classUnderTest.aveOfRange(1, 10), 0.1);
     assertEquals(25, classUnderTest.sumOfOdd(1, 10));
+    assertEquals(24, classUnderTest.sumOfOdd(2, 10));
     assertEquals(30, classUnderTest.sumOfEven(1, 10));
+    assertEquals(30, classUnderTest.sumOfEven(2, 10));
   }
 }
