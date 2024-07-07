@@ -18,4 +18,14 @@ public class AppTest {
     App classUnderTest = new App();
     assertEquals("Hello World!", classUnderTest.getGreeting());
   }
+
+  public void testCaluObjectSumAndAve() {
+    Calculate classUnderTest = new Calculate();
+    assertEquals(5, classUnderTest.sum(2, 3));
+    assertEquals(2.5, classUnderTest.ave(2, 3), 0.1);
+    assertEquals(55, classUnderTest.sumOfRange(1, 10));
+    assertEquals(5.5, classUnderTest.aveOfRange(1, 10), 0.1);
+    assertEquals(25, classUnderTest.sumOfOdd(1, 10));
+    assertEquals(30, classUnderTest.sumOfEven(1, 10));
+  }
 }

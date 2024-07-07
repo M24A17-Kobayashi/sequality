@@ -4,11 +4,31 @@
 package org.example;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+  public String getGreeting() {
+    return "Hello World!";
+  }
 
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
-    }
+  public static void main(String[] args) {
+    int a = 2;
+    int b = 3;
+    int c = 1;
+    int d = 10;
+    int sum1, sum2, sum3, sum4 = 0;
+    double ave1, ave2 = 0;
+    Calculate caluObject = new Calculate();
+
+    System.out.println(new App().getGreeting());
+
+    sum1 = caluObject.sum(a, b);
+    ave1 = caluObject.ave(a, b);
+    System.out.printf("Sum of %d and %d is %d. Average is %.1f.\n", a, b, sum1, ave1);
+
+    sum2 = caluObject.sumOfRange(c, d);
+    ave2 = caluObject.aveOfRange(c, d);
+    System.out.printf("Sum of %d to %d is %d. Average is %.1f.\n", c, d, sum2, ave2);
+
+    sum3 = caluObject.sumOfOdd(c, d);
+    sum4 = caluObject.sumOfEven(c, d);
+    System.out.printf("Sum of odd of %d to %d is %d. Sum of even is %d.\n", c, d, sum3, sum4);
+  }
 }
